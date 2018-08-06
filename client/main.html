@@ -2,24 +2,26 @@
   <title>rede-J</title>
 </head>
 
-<body>
-  <h1>Welcome to Meteor!</h1>
-
-  {{> hello}}
-  {{> info}}
-</body>
-
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
+<template name="Inicio">
+  <h1>Conecte-se com mundo.</h1>
+  <p>Veja fotos e status das pessoas que segue.</p>
+  <p>Compartilhe as novidades no seu perfil.</p>
+  <p>Siga os seus amigos e pessoas ao redor mundo.</p>
+</template>
+<template name="Sobre">
+  <h1>Sobre</h1>
+  <h2>Nossa visão</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a risus nec ex dignissim porta. Fusce luctus, elit eu blandit cursus, lorem erat hendrerit massa, eget dignissim lorem est eu tortor. Fusce iaculis cursus enim quis congue. Pellentesque lacus lorem, aliquet at risus id, ornare lacinia nibh. Nam faucibus turpis tempor, porta elit sed, tempus urna. Nam lorem orci, euismod ullamcorper sapien vel, convallis convallis metus. Praesent egestas elit ex, non maximus erat ultricies eu. Pellentesque id velit finibus, eleifend ipsum sit amet, dignissim massa. Morbi rutrum ipsum sapien, vel porta elit commodo in. Fusce euismod blandit euismod. Suspendisse a elementum erat. Quisque pellentesque eget purus non sollicitudin. Sed sit amet facilisis sem, ac semper nulla.</p>
+  <h2>Nossos valores</h2>
+  <p>Aliquam erat volutpat. Praesent neque lectus, mattis sit amet pharetra sit amet, ultricies at neque. Nam hendrerit felis ut rutrum ultrices. Nullam quis iaculis sem. Quisque tincidunt vestibulum magna eu lobortis. Fusce vel aliquam orci. Morbi dignissim et velit in ultrices. Vestibulum sed urna sed sapien scelerisque pharetra. Fusce risus enim, fermentum eget sollicitudin a, fringilla vitae justo. In hac habitasse platea dictumst.</p>
+  <p>Nunc in nisi sit amet turpis blandit consequat. Etiam mollis urna et placerat ornare. Aliquam quis egestas libero, scelerisque pretium mi. Sed cursus risus a varius convallis. Mauris pharetra arcu tortor, vitae bibendum odio blandit ac. Maecenas auctor vitae nisi id egestas. Nunc vitae velit id ipsum dictum tempor non non ante. Nullam tristique semper nunc lobortis egestas. Cras scelerisque, est et consequat convallis, odio nisl fermentum nunc, vel eleifend lacus massa vitae quam. Maecenas ante leo, molestie a iaculis sit amet, cursus ut ipsum. Morbi ac vestibulum arcu, ut vehicula justo. Pellentesque eu nisi posuere, vehicula risus eu, vulputate metus.</p>
+</template>
+<template name="Cabecalho">
+  <a href="/">Inicio</a>
+  <a href="/Sobre">Sobre</a>
+</template>
+<template name="LayoutPrincipal">
+  {{> Cabecalho}}
+  {{> Template.dynamic template=main}}
 </template>
 
-<template name="info">
-  <h2>Learn Meteor!</h2>
-  <ul>
-    <li><a href="https://www.meteor.com/try" target="_blank">Do the Tutorial</a></li>
-    <li><a href="http://guide.meteor.com" target="_blank">Follow the Guide</a></li>
-    <li><a href="https://docs.meteor.com" target="_blank">Read the Docs</a></li>
-    <li><a href="https://forums.meteor.com" target="_blank">Discussions</a></li>
-  </ul>
-</template>
