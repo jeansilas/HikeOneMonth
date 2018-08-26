@@ -18,7 +18,10 @@
         <li><a href="/">Inicio</a></li>
         <li><a href="/Sobre">Sobre</a></li>
         <li><a href="/Contato">Contato</a></li>
+        {{#if currentUser}}
         <li><a href="/Timeline">Feed</a></li>
+        {{/if}}
+        <li>{{> atNavButton}}</li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
